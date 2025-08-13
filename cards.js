@@ -2,14 +2,20 @@ let cardsList = document.querySelector(".cards");
 
 let cards = [
   { title: "Bio", url: "https://valientjuno.github.io/MY_FIRST_SITE" },
-  { title: "HTML Project", url: "https://example.com/html" },
-  { title: "JavaScript Game", url: "https://example.com/game" },
+  {
+    title: "Currents",
+    url: " https://valientjuno.github.io/weather_news/",
+  },
+  {
+    title: "JavaScript Game",
+    url: "https://valientjuno.github.io/js_memoryGame/",
+  },
 ];
 
 function displayCards() {
   cardsList.innerHTML = "";
 
-  cards.forEach((card) => {
+  cards.map((card) => {
     let cardElement = document.createElement("div");
     cardElement.classList.add("card");
 
@@ -27,10 +33,10 @@ function displayCards() {
     cardsList.appendChild(cardElement);
   });
 }
-isplayCards();
+displayCards();
 
 cards.push({
-  title: "New Cool Project",
-  url: "https://example.com/new-project",
+  title: "Project List",
+  url: "https://valientjuno.github.io/project_list/",
 });
 displayCards();
