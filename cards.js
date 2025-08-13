@@ -39,7 +39,7 @@ function displayCards() {
 displayCards();
 
 cards.push({
-  title: "Project List",
+  title: "List Project ",
   url: "https://valientjuno.github.io/project_list/",
 });
 displayCards();
